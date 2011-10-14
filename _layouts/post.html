@@ -1,0 +1,15 @@
+---
+layout: base
+---
+{% if page.img %}<img src="{{ page.img }}" alt="{{ page.title }}">{% endif %}
+<article>
+  <header>
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <h3>Posted on {{ page.date | date_to_long_string }}</h3>
+  </header>
+  {{ content }}
+  <footer>
+    {% if page.category %}<span class="post-category">Filed Under <a href="/blog/{{ page.category }}/">{{ page.category }}</a></span>{% endif %}
+    {% if page.comments %}<span class="post-comments"><a href="{{ page.url }}{% if page.comments %}#disqus_thread" data-disqus-identifier="{{ page.id }}{% endif %}">Comments</a></span>{% endif %}
+  </footer>
+</article>

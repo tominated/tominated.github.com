@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	
+	<title>Tom Brunoli{% if page.title %} | {{ page.title }}{% endif %}</title>
+	
+	<script type="text/javascript" src="/js/modernizr.js"></script>
+	<script type="text/javascript" src="http://use.typekit.com/nze2wiy.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  {% if page.title == 'Home' %}<link rel="stylesheet" type="text/css" href="/css/flexslider.css">
+  <script src="/js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      $('.flexslider').flexslider({
+        slideshowSpeed: 3000,
+        directionNav: false,
+        controlNav: false,
+        pauseOnHover: true,
+        randomize: true,
+        animation: 'fade'
+      });
+    });
+  </script>{% endif %}
+</head>
+
+<body>
+  
+  <header id="header">
+    <h1><a href="/">Tom Brunoli</a></h1>
+    <p>
+      The portfolio and musings of a young web designer and developer.
+    </p>
+    <nav>
+      <ul>
+        <li><a href="/"{% if page.title == 'Home' %} class="current"{% endif %}>Home</a></li>
+        <li><a href="/portfolio/"{% if page.title == 'Portfolio' %} class="current"{% endif %}>Portfolio</a></li>
+        <li><a href="/blog/"{% if page.title == 'Blog' %} class="current"{% endif %}>Blog</a></li>
+        <li><a href="/contact/"{% if page.title == 'Contact' %} class="current"{% endif %}>Contact</a></li>
+      </ul>
+      <!--<form id="search_form">
+        <p>
+          <input type="text" name="search" placeholder="search" id="search">
+        </p>
+      </form>-->
+    </nav>
+  </header>
+	<div id="content">
+	  {{ content }}
+	</div>
+	<footer>
+	  <p>
+	    &copy; 2011 Thomas Brunoli<br>
+	    ABN 15 107 828 750
+	  </p>
+	</footer>
+	
+	<script src="/js/site.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+	  {% if page.title == 'Blog' %}
+    var disqus_shortname = 'tombrunoli';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    {% endif %}// Google Analytics
+	  var _gaq=[['_setAccount','UA-22009910-1'],['_trackPageview'],['_trackPageLoadTime']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
+</html>

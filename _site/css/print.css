@@ -1,0 +1,36 @@
+body {
+  font-size: 12px;
+  line-height: 24px;
+  width: auto;
+  color: #222;
+  background: transparent;
+}
+
+a[href^="http"]:after {
+  content: " <"attr(href)"> ";
+}
+
+#content {
+  background: transparent;
+  box-shadow: none;
+}
+
+#content section,
+#content article {
+  padding: 48px 0;
+}
+
+#content header h2,
+#content header h3,
+#comments header h3,
+#comments header h4 { float: none; }
+
+header p,
+header nav,
+a.img div,
+#comment_form,
+#pagination,
+#lastfm,
+.typekit-badge {
+  display: none !important;
+}
