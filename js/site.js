@@ -17,7 +17,7 @@ $(document).ready(function(){
       }   
     });
     html += '</ul>'
-    $('#content').append('<section id="lastfm"><header><h2>What I\'m listening to</h2><h3>Powered by <a href="http://last.fm/" target="_blank">last.fm</a></h3></header></section>')
+    $('#content').append(innerShiv('<section id="lastfm"><header><h2>What I\'m listening to</h2><h3>Powered by <a href="http://last.fm/" target="_blank">last.fm</a></h3></header></section>', false));
     $('#lastfm').append(html).append('<div class="clear"></div>');
   });
   

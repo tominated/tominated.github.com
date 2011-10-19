@@ -249,6 +249,7 @@ code {
 #content {
   background: #fafafa;
   /* Not sure if I like the shadow or not...
+  nope. no shadow
   -webkit-box-shadow: 0 0 12px rgba(0,0,0,.2);
   -moz-box-shadow:    0 0 12px rgba(0,0,0,.2);
   -ms-box-shadow:     0 0 12px rgba(0,0,0,.2);
@@ -258,7 +259,7 @@ code {
 
 #content section,
 #content article {
-  padding: 48px 48px 24px 48px;
+  padding: 47px 48px 23px 48px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #efefef;
 }
@@ -384,7 +385,7 @@ footer {
 /* Large smartphone/Small tablet styling */
 @media screen and (max-width: 600px) {
   
-  body { margin: 24px; }
+  body { margin: 24px; background-image: none; }
   
   #content section,
   #content article { padding: 24px; }

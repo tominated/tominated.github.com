@@ -3,9 +3,11 @@ layout: base
 title: Blog
 ---
 {% for post in site.posts limit:1 %}
+{% if post.img %}
 <a href="{{ post.url }}" class="img">
   <img src="{{ post.img }}" alt="{{ post.title }}">
 </a>
+{% endif %}
 {% endfor %}
 {% for post in site.posts %}
 <article>
