@@ -257,6 +257,10 @@ code {
   box-shadow:         0 0 12px rgba(0,0,0,.2); */
 }
 
+footer {
+  margin: 24px 0 0 0;
+}
+
 #content section,
 #content article {
   padding: 47px 48px 23px 48px;
@@ -286,9 +290,9 @@ code {
   margin-bottom: 0;
 }
 
-article .post-category,
-article .post-comments {
+article footer {
   text-transform: uppercase;
+  margin: 24px 0;
 }
 
 article .post-comments {
@@ -355,10 +359,6 @@ article .post-comments {
   float: left;
   padding: 0 24px 24px 0;
   margin: 0;
-}
-
-footer {
-  margin: 24px 0 0 0;
 }
 
 
