@@ -9,10 +9,10 @@ $(document).ready(function(){
   });
 
   // Shows recently played last.fm tracks at the bottom of the page
-  $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=tominated&api_key=fe46d430f32227f35b13a1403e423508&limit=5&format=json&callback=?", function(data) {
+  $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=tominated&api_key=fe46d430f32227f35b13a1403e423508&limit=6&format=json&callback=?", function(data) {
     var html = '<ul>';
     $.each(data.recenttracks.track, function(i,item){
-      if (i < 5) {
+      if (i < 6) {
         html += "<li><a href='" + item.url + "' class='img' target='_blank'><img src='" + ((item.image[3]['#text'] !== "") ? item.image[3]['#text'] : "/img/no-cover.png") + "' title='" + item.artist['#text'] + " - " + item.name + "' alt='"  + item.artist['#text'] + " - " + item.name + "'/></a></li>"; 
       }   
     });

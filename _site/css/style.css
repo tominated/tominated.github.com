@@ -1,9 +1,9 @@
 body {
-  max-width: 992px;
+  max-width: 1008px;
   margin: 48px;
-  font: 1em/1.5em 'm-1c', 'M+ 1c', 'Verdana', 'Arial', sans-serif;
+  font: 0.75em/2em 'm-1c', 'M+ 1c', 'Verdana', 'Arial', sans-serif;
   color: #666;
-  background: #eee url(/img/bg.png) top left no-repeat;
+  background: #eee url(/img/bg_2.png) -71px top;
 }
 
 h1,
@@ -197,6 +197,10 @@ code {
 
 .clear { clear: both; }
 
+#header h1 {
+  font-size: 16px;
+}
+
 #header nav {
   margin-bottom: 24px;
   height: 24px;
@@ -345,10 +349,11 @@ article .post-comments {
 }
 
 #lastfm li {
-  width: 160px;
-  height: 160px;
+  width: 132px;
+  height: 132px;
   float: left;
   padding: 0 24px 24px 0;
+  margin: 0;
 }
 
 footer {
