@@ -1,9 +1,10 @@
 body {
   max-width: 1008px;
-  margin: 48px;
-  font: 0.75em/2em 'm-1c', 'M+ 1c', 'Verdana', 'Arial', sans-serif;
+  margin: 48px auto;
+  padding: 0 24px;
+  font: 14px/24px 'm-1c', 'M+ 1c', 'Verdana', 'Arial', sans-serif;
   color: #666;
-  background: #eee url(/img/bg_2.png) -71px top;
+  background: #eee;
 }
 
 h1,
@@ -197,6 +198,8 @@ code {
 
 .clear { clear: both; }
 
+#header { margin-bottom: 48px; }
+
 #header h1 {
   font-size: 16px;
 }
@@ -217,8 +220,7 @@ code {
 }
 
 #header nav a {
-  color: #999;
-  border-color: #ccc;
+  border-color: #666;
 }
 
 #header nav a:hover {
@@ -226,8 +228,8 @@ code {
 }
 
 #header nav a.current {
-  color: #666;
-  border-bottom: 6px solid #666;
+  color: #000;
+  border-bottom: 6px solid #444;
 }
 
 #header nav form {
@@ -385,10 +387,16 @@ article .post-comments {
 /* Large smartphone/Small tablet styling */
 @media screen and (max-width: 600px) {
   
-  body { margin: 24px; background-image: none; }
+  body {
+    margin: 24px;
+    background-image: none;
+    padding: 0;
+  }
   
   #content section,
-  #content article { padding: 24px; }
+  #content article {
+    padding: 24px;
+  }
   
   blockquote,
   pre {
@@ -400,7 +408,9 @@ article .post-comments {
     float: none;
   }
   
-  #header nav form { display: none; }
+  #header nav form {
+    display: none;
+  }
   
 }
 

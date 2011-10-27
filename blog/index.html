@@ -8,6 +8,11 @@ title: Blog
   <img src="{{ post.img }}" alt="{{ post.title }}">
 </a>
 {% endif %}
+{% if post.video %}
+<div id="video">
+	{{ video }}
+</div>
+{% endif %}
 {% endfor %}
 {% for post in site.posts %}
 <article>

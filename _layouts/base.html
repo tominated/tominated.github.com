@@ -18,6 +18,8 @@
 	<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
 	<link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
 	
+	<!-- optional --><link rel="stylesheet" type="text/css" href="/css/dark.css" />
+	
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   {% if page.title == 'Home' %}<link rel="stylesheet" type="text/css" href="/css/flexslider.css">
   <script src="/js/jquery.flexslider-min.js"></script>
@@ -66,8 +68,9 @@
 	  </p>
 	</footer>
 	
-	<script src="/js/site.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" charset="utf-8">
+	<script src="/js/jquery.fitvids.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/site.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
 	  {% if page.title == 'Blog' %}
     var disqus_shortname = 'tombrunoli';
     (function () {

@@ -2,6 +2,9 @@
 layout: base
 ---
 {% if page.img %}<img src="{{ page.img }}" alt="{{ page.title }}">{% endif %}
+{% if page.video %}<div id="video">
+	{{ page.video }}
+</div>{% endif %}
 <article>
   <header>
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>

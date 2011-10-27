@@ -1,5 +1,8 @@
 $(document).ready(function(){
   
+  // Initialise fitvids.js
+  $('#video').fitVids();
+  
   // Creates a hide/show button for code snippets
   $('pre code').hide();
   $('pre').prepend('<a href="#" class="hide-show">Hide/Show Code</a>\n')
