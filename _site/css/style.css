@@ -412,7 +412,7 @@ article .post-comments {
     display: none;
   }
   
-  .flex-caption { padding-left: 24px !important; }
+  .flex-caption { padding: 12px 24px 12px 24px !important; }
   
 }
 
