@@ -249,7 +249,7 @@ code {
 }
 
 #content {
-  background: #fafafa;
+  background: #fafafa url(/img/bg_4.png);
   /* Not sure if I like the shadow or not...
   nope. no shadow
   -webkit-box-shadow: 0 0 12px rgba(0,0,0,.2);
@@ -411,6 +411,8 @@ article .post-comments {
   #header nav form {
     display: none;
   }
+  
+  .flex-caption { padding: 12px 24px 12px 24px !important; }
   
 }
 
