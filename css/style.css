@@ -270,17 +270,31 @@ footer {
   border-bottom: 1px solid #efefef;
 }
 
+#content header:before,
+#content header:after {
+  content: "";
+  display: table;
+}
+
+#content header:after {
+  clear: both;
+}
+
 #content header {
-  width: 100%;
-  overflow: auto;
+  zoom: 1;
 }
 
 #content header h2 {
   float: left;
+  padding: 12px 24px 12px 48px;
+  margin-left: -48px;
+  margin-bottom: 48px;
+  background: rgba(0,0,0,0.05);
 }
 
 #content header h3 {
   float: right;
+  padding: 12px 0;
 }
 
 #content section .img,
@@ -436,6 +450,25 @@ article .post-comments {
     -ms-box-shadow:     none;
     -o-box-shadow:      none;
     box-shadow:         none;
+  }
+  
+  #content header h2 {
+    margin-left: -24px;
+    padding-left: 24px;
+  }
+  
+  #content header h3 {
+    padding: 0;
+  }
+  
+  #lastfm ul {
+    margin-right: 0;
+  }
+  
+  #lastfm li {
+    width: 100%;
+    float: none;
+    padding: 0 24px 0 0;
   }
   
   body > footer {
