@@ -74,6 +74,7 @@ a:hover {
 img {
   display: block;
   width: 100%;
+  -ms-interpolation-mode: bicubic;
 }
 
 a.img {

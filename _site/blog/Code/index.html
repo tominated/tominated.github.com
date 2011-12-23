@@ -9,6 +9,9 @@
 	<meta name="description" content="Hi, my name is Tom. I design and develop websites professionally and affordably.">
   <meta name="keywords" content="Website, Webpage, Web,Development, Design, Web Design, Web Development, Graphics, HTML, CSS, Javascript, Python, PHP, jQuery, Drupal, Portfolio, Blog, Thomas Brunoli">
 	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
 	<script type="text/javascript" src="/js/modernizr.js"></script>
 	<script type="text/javascript" src="http://use.typekit.com/nze2wiy.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -66,84 +69,7 @@ other people may like it. Here it is in it's uncompressed glory:
 it works beautifully. I have also made a preview page. You can check it out
 [**here**](/reset_test.html).
 
-<div class="highlight"><pre><code class="css"><span class="c">/*</span>
-<span class="c"> * Tom Brunoli&#39;s CSS Base Styles</span>
-<span class="c"> * Updated 2011-05-12</span>
-<span class="c"> * </span>
-<span class="c"> * Licenced under Creative Commons Attribution-ShareAlike</span>
-<span class="c"> * http://creativecommons.org/licenses/by-sa/3.0/</span>
-<span class="c"> *</span>
-<span class="c"> */</span>
-
-<span class="c">/* Basics */</span>
-<span class="nt">html</span><span class="o">,</span> <span class="nt">body</span>                      <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span> <span class="m">#efefef</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span> <span class="m">#444</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">body</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">select</span><span class="o">,</span> <span class="nt">button</span><span class="o">,</span>
-<span class="nt">textarea</span>                        <span class="p">{</span> <span class="k">font</span><span class="o">:</span> <span class="m">13px</span><span class="o">/</span><span class="m">24px</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">body</span>                            <span class="p">{</span> <span class="k">overflow-y</span><span class="o">:</span> <span class="k">scroll</span><span class="p">;</span> <span class="p">}</span>
-
-<span class="nt">p</span>                               <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">24px</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">a</span>                               <span class="p">{</span> <span class="k">outline</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">a</span><span class="nd">:focus</span>                         <span class="p">{</span> <span class="k">outline</span><span class="o">:</span> <span class="m">1px</span> <span class="k">dotted</span> <span class="k">invert</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">img</span>                             <span class="p">{</span> <span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
-
-<span class="c">/* Headings */</span>
-<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span>          <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">24px</span> <span class="m">0</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span> <span class="m">#222</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">h1</span>                              <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">h2</span>                              <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">22px</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">h3</span>                              <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">h4</span>                              <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span>                          <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="p">}</span>
-
-<span class="c">/* Lists */</span>
-<span class="nt">ul</span><span class="o">,</span> <span class="nt">ol</span>                          <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">24px</span> <span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">ul</span> <span class="nt">ul</span><span class="o">,</span> <span class="nt">ul</span> <span class="nt">ol</span><span class="o">,</span> <span class="nt">ol</span> <span class="nt">ol</span><span class="o">,</span> <span class="nt">ol</span> <span class="nt">ul</span>      <span class="p">{</span> <span class="k">margin-left</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">ul</span>                              <span class="p">{</span> <span class="k">list-style</span><span class="o">:</span> <span class="k">disc</span> <span class="k">outside</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">ol</span>                              <span class="p">{</span> <span class="k">list-style</span><span class="o">:</span> <span class="k">decimal</span> <span class="k">outside</span><span class="p">;</span> <span class="p">}</span>
-
-<span class="c">/* Quotes */</span>
-<span class="nt">q</span><span class="o">,</span> <span class="nt">blockquote</span>                   <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span> <span class="n">Times</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span> <span class="k">font-style</span><span class="o">:</span> <span class="k">italic</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">blockquote</span>                      <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">24px</span> <span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">20px</span><span class="p">;</span>
-                                  <span class="k">border-left</span><span class="o">:</span> <span class="m">4px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span> <span class="p">}</span>
-
-<span class="c">/* Code */</span>
-<span class="nt">code</span><span class="o">,</span> <span class="nt">ol</span><span class="nc">.code</span><span class="o">,</span> <span class="nt">pre</span>              <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Menlo</span><span class="o">,</span> <span class="n">Monaco</span><span class="o">,</span> <span class="n">Consolas</span><span class="o">,</span> <span class="n">Courier</span><span class="p">;</span>
-                                  <span class="k">background</span><span class="o">:</span> <span class="m">#222</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span> <span class="m">#fefefe</span><span class="p">;</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">12px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">pre</span><span class="o">,</span> <span class="nt">ol</span><span class="nc">.code</span>                    <span class="p">{</span> <span class="k">padding</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span>
-                                  <span class="k">overflow</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span> <span class="k">list-style-position</span><span class="o">:</span> <span class="k">outside</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">code</span>                            <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">6px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">ol</span><span class="nc">.code</span> <span class="nt">li</span>                      <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">24px</span><span class="p">;</span> <span class="k">white-space</span><span class="o">:</span> <span class="n">pre</span><span class="p">;</span> <span class="p">}</span>
-
-<span class="c">/* Tables */</span>
-<span class="nt">table</span>                           <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span>
-                                  <span class="k">border-bottom</span><span class="o">:</span> <span class="m">2px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">caption</span>                         <span class="p">{</span> <span class="k">line-height</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">12px</span><span class="p">;</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span>
-                                  <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">tbody</span><span class="o">,</span> <span class="nt">tr</span>                       <span class="p">{</span> <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">th</span>                              <span class="p">{</span> <span class="k">border-bottom</span><span class="o">:</span> <span class="m">2px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">td</span>                              <span class="p">{</span> <span class="k">padding</span><span class="o">:</span> <span class="m">2px</span> <span class="m">6px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">tbody</span> <span class="nt">tr</span><span class="nd">:nth-of-type</span><span class="o">(</span><span class="nt">odd</span><span class="o">)</span>       <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="m">#ddd</span><span class="p">;</span> <span class="p">}</span>
-
-<span class="c">/* Forms */</span>
-<span class="nt">form</span>                            <span class="p">{</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="n">zoom</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">form</span><span class="nd">:before</span><span class="o">,</span> <span class="nt">form</span><span class="nd">:after</span>         <span class="p">{</span> <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span> <span class="k">display</span><span class="o">:</span> <span class="n">table</span><span class="p">;</span> <span class="p">}</span> <span class="c">/* Clearfix */</span>
-<span class="nt">form</span><span class="nd">:after</span>                      <span class="p">{</span> <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span> <span class="p">}</span> <span class="c">/* Clearfix */</span>
-<span class="nt">label</span>                           <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">input</span><span class="o">,</span> <span class="nt">button</span><span class="o">,</span> <span class="nt">textarea</span>         <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#444</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span> <span class="m">#f9f9f9</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">input</span><span class="o">,</span> <span class="nt">button</span>                   <span class="p">{</span> <span class="k">height</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span> <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span> <span class="k">margin-right</span><span class="o">:</span> <span class="m">12px</span><span class="p">;</span>
-                                  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">12px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">textarea</span>                        <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">12px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">submit</span><span class="o">],</span> <span class="nt">button</span>      <span class="p">{</span> <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">11px</span><span class="p">;</span> <span class="k">line-height</span><span class="o">:</span> <span class="m">18px</span><span class="p">;</span> <span class="p">}</span>
-<span class="nt">input</span><span class="nd">:focus</span><span class="o">,</span>
-<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">submit</span><span class="o">]</span><span class="nd">:hover</span><span class="o">,</span>
-<span class="nt">button</span><span class="nd">:hover</span><span class="o">,</span> <span class="nt">textarea</span><span class="nd">:focus</span>    <span class="p">{</span> <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="k">border-color</span><span class="o">:</span> <span class="m">#666</span><span class="p">;</span> <span class="k">outline</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="p">}</span>
-
-<span class="c">/* HTML5 Elements */</span>
-<span class="nt">article</span><span class="o">,</span> <span class="nt">hgroup</span><span class="o">,</span> <span class="nt">header</span><span class="o">,</span> <span class="nt">footer</span><span class="o">,</span>
-<span class="nt">section</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">nav</span><span class="o">,</span> <span class="nt">figure</span><span class="o">,</span>
-<span class="nt">figcaption</span><span class="o">,</span> <span class="nt">video</span>               <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="p">}</span>
-</code></pre>
-</div>
-
+Liquid error: undefined method `join' for #<String:0x007fab2a19ea10>
 
 You can download a minified version [here](/downloads/reset.min.css). It's licensed under
 the [Creative Commons Attribute-ShareAlike](http://creativecommons.org/licenses/by-sa/3.0/) licence.
@@ -165,7 +91,7 @@ comment (if disqus decides to work), or send me an email!
 	</footer>
 	
 	<script src="/js/jquery.fitvids.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/js/site.js" type="text/javascript" charset="utf-8"></script>
+  
 	<script type="text/javascript">
 	  // Google Analytics
 	  var _gaq=[['_setAccount','UA-22009910-1'],['_trackPageview'],['_trackPageLoadTime']];

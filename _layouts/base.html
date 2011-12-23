@@ -7,7 +7,10 @@
 	<title>Tom Brunoli{% if page.title %} | {{ page.title }}{% endif %}</title>
 	<meta name="author" content="Thomas Brunoli">
 	<meta name="description" content="Hi, my name is Tom. I design and develop websites professionally and affordably.">
-  <meta name="keywords" content="Website, Webpage, Web,Development, Design, Web Design, Web Development, Graphics, HTML, CSS, Javascript, Python, PHP, jQuery, Drupal, Portfolio, Blog, Thomas Brunoli">
+  <meta name="keywords" content="Website, Webpage, Web,Development, Design, Web Design, Web Development, Brisbane, Queensland, Graphics, HTML, CSS, Javascript, Python, PHP, jQuery, Drupal, Portfolio, Blog, Thomas Brunoli">
+	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	
 	<script type="text/javascript" src="/js/modernizr.js"></script>
 	<script type="text/javascript" src="http://use.typekit.com/nze2wiy.js"></script>
@@ -69,7 +72,7 @@
 	</footer>
 	
 	<script src="/js/jquery.fitvids.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/js/site.js" type="text/javascript" charset="utf-8"></script>
+  {% if page.title == 'Blog' %}<script src="/js/site.js" type="text/javascript" charset="utf-8"></script>{% endif %}
 	<script type="text/javascript">
 	  {% if page.title == 'Blog' %}
     var disqus_shortname = 'tombrunoli';
