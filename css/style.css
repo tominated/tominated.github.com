@@ -2,7 +2,7 @@ body {
   max-width: 1008px;
   margin: 48px auto;
   padding: 0 24px;
-  font: 14px/24px 'm-1c', 'M+ 1c', 'Verdana', 'Arial', sans-serif;
+  font: 14px/24px 'proxima-nova', 'Verdana', 'Arial', sans-serif;
   color: #666;
   background: #eee;
 }
@@ -136,7 +136,6 @@ label {
 
 input,
 button {
-  font: 16px/1.5em 'mplus-1m', 'M+ 1m', 'Menlo', 'Monaco', 'Consolas', monospace;
   border: 1px solid #CCC;
   background: #fafafa;
   height: 24px;
@@ -174,7 +173,6 @@ textarea {
   padding: 12px 2%;
   border: 1px solid #CCC;
   background: #fafafa;
-  font: 16px/1.5em 'mplus-1m', 'M+ 1m', 'Menlo', 'Monaco', 'Consolas', monospace;
   color: #666;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
@@ -194,7 +192,7 @@ textarea:focus {
 
 pre,
 code {
-  font-family: 'mplus-1m', 'M+ 1m', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-family: 'anonymous-pro', 'Andale Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
 .clear { clear: both; }
@@ -371,11 +369,13 @@ article .post-comments {
 }
 
 #lastfm li {
-  width: 132px;
-  height: 132px;
+  width: 16.6666666%;
   float: left;
   padding: 0 24px 24px 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
@@ -395,6 +395,10 @@ article .post-comments {
   
   .post-category {
     margin-bottom: 24px;
+  }
+  
+  #lastfm li {
+    width: 33.3333333%;
   }
   
 }
@@ -462,18 +466,16 @@ article .post-comments {
     padding: 0;
   }
   
-  #lastfm ul {
-    margin-right: 0;
-  }
-  
-  #lastfm li {
-    width: 100%;
-    float: none;
-    padding: 0 24px 0 0;
+  #lastfm {
+    display: none;
   }
   
   body > footer {
     margin: 24px 24px 0 24px;
   }
   
+}
+
+.lt-ie8 #lastfm li {
+  width: 132px;
 }
