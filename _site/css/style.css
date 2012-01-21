@@ -300,8 +300,9 @@ footer {
 }
 
 #content header h3 {
-  float: right;
   padding: 12px 0;
+  text-align: right;
+  margin-bottom: 48px;
 }
 
 #content section .img,
@@ -395,6 +396,7 @@ article .post-comments {
   #content header h4,
   #content .post-comments {
     float: none;
+    text-align: left;
   }
   
   #content footer span {
