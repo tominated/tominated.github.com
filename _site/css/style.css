@@ -270,16 +270,24 @@ footer {
 }
 
 #content header:before,
-#content header:after {
+#content header:after,
+#content section:before,
+#content section:after,
+#content article:before
+#content article:after {
   content: "";
   display: table;
 }
 
-#content header:after {
+#content header:after,
+#content section:after,
+#content article:after {
   clear: both;
 }
 
-#content header {
+#content header,
+#content section,
+#content article {
   zoom: 1;
 }
 
