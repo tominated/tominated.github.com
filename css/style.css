@@ -1,6 +1,6 @@
 body {
   max-width: 1008px;
-  margin: 0 auto 48px auto;
+  margin: 48px auto;
   padding: 0 24px;
   font: 14px/24px 'proxima-nova', 'Verdana', 'Arial', sans-serif;
   color: #666;
@@ -158,7 +158,7 @@ button,
 input[type='submit'] {
   padding: 12px;
   height: 48px;
-  font-family: 'proxima-nova', 'Verdana', 'Arial', sans-serif;
+  font-family: 'm-1c', 'M+ 1c', 'Verdana', 'Arial', sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition:    all 0.2s ease-in-out;
   -ms-transition:     all 0.2s ease-in-out;
@@ -197,19 +197,14 @@ code {
 
 .clear { clear: both; }
 
-#header {
-  padding: 48px;
-  padding-right: 24px;
-  margin-left: -48px;
-  background: url(/img/logo.png) left center no-repeat;
-  text-shadow: 0 -1px #000;
-}
+#header { margin-bottom: 48px; }
 
 #header h1 {
   font-size: 16px;
 }
 
 #header nav {
+  margin-bottom: 24px;
   height: 24px;
 }
 
@@ -422,14 +417,9 @@ article .post-comments {
 @media screen and (max-width: 600px) {
   
   body {
-    margin: 0 24px;
+    margin: 24px;
     background-image: none;
     padding: 0;
-  }
-
-  #header {
-    padding-top: 24px;
-    background-position: 24px center;
   }
   
   #content section,
@@ -458,7 +448,7 @@ article .post-comments {
 /* Smartphone styling */
 @media screen and (max-width: 480px) {
   
-  body { margin: 0; }
+  body { margin: 24px 0; }
   
   #header h1,
   #header p {
