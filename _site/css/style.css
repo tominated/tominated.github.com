@@ -348,30 +348,9 @@ article .post-comments {
 
 #disqus_thread {
   list-style: none;
-}
-
-#disqus_thread li {
-  margin-bottom: 24px;
+  padding: 0 48px;
+  border-top: 1px solid #fff;
   border-bottom: 1px solid #efefef;
-  page-break-inside: avoid;
-}
-
-#disqus_thread li:last-child {
-  border-bottom: none;
-  margin: 0;
-}
-
-#disqus_thread header {
-  width: 100%;
-  overflow: auto;
-}
-
-#disqus_thread header h3 {
-  float: left;
-}
-
-#disqus_thread header h4 {
-  float: right;
 }
 
 #lastfm ul {
