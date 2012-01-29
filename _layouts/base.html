@@ -57,11 +57,6 @@
         <li><a href="/blog/"{% if page.title == 'Blog' %} class="current"{% endif %}>Blog</a></li>
         <li><a href="/contact/"{% if page.title == 'Contact' %} class="current"{% endif %}>Contact</a></li>
       </ul>
-      <!--<form id="search_form">
-        <p>
-          <input type="text" name="search" placeholder="search" id="search">
-        </p>
-      </form>-->
     </nav>
   </header>
   <div id="content">
@@ -75,7 +70,7 @@
   </footer>
 
   <script src="/js/jquery.fitvids.js" type="text/javascript" charset="utf-8"></script>
-  {% if page.title == 'Blog' %}<script src="/js/site.js" type="text/javascript" charset="utf-8"></script>{% endif %}
+  {% if page.title == 'Blog' or page.blog %}<script src="/js/site.js" type="text/javascript" charset="utf-8"></script>{% endif %}
   <script type="text/javascript">
     {% if page.title == 'Blog' %}
     var disqus_shortname = 'tombrunoli';

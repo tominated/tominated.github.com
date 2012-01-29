@@ -346,31 +346,31 @@ article .post-comments {
   cursor: default;
 }
 
-#comments {
+#disqus_thread {
   list-style: none;
 }
 
-#comments li {
+#disqus_thread li {
   margin-bottom: 24px;
   border-bottom: 1px solid #efefef;
   page-break-inside: avoid;
 }
 
-#comments li:last-child {
+#disqus_thread li:last-child {
   border-bottom: none;
   margin: 0;
 }
 
-#comments header {
+#disqus_thread header {
   width: 100%;
   overflow: auto;
 }
 
-#comments header h3 {
+#disqus_thread header h3 {
   float: left;
 }
 
-#comments header h4 {
+#disqus_thread header h4 {
   float: right;
 }
 
