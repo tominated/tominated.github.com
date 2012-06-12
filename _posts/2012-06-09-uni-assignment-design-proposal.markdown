@@ -21,3 +21,10 @@ am really happy with the design.
 Do note that it is REALLY unoptimised and uses absolutely
 massive images, so It will take a while to load. Wait until it's finished
 loading before scrolling for the best experience. Let me know what you think!
+
+### The Prototype
+
+Also, you can
+[view the prototype here](http://dl.dropbox.com/u/3911808/fps/index.html).
+This will only work on webkit browsers as far as I know. It works pretty great
+on an iPad, as intended. It also only works in landscape mode.
