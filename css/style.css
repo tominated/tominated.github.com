@@ -597,7 +597,7 @@ button,
 input[type='submit'] {
   padding: 12px;
   height: 48px;
-  font-family: 'proxima-nova', 'Verdana', 'Arial', sans-serif;
+  font-family: 'source-sans-pro', 'Verdana', 'Arial', sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition:    all 0.2s ease-in-out;
   -ms-transition:     all 0.2s ease-in-out;
@@ -631,7 +631,7 @@ textarea:focus {
 
 pre,
 code {
-  font-family: 'anonymous-pro', 'Andale Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-family: 'source-code-pro', 'Andale Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
 .clear { clear: both; }
