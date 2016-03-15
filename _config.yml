@@ -1,5 +1,5 @@
 permalink:    /blog/:categories/:year/:month/:day/:title/
 category_dir: /blog/
-pygments:     true
+highlighter:  rouge
 url:          http://tombrunoli.com
-markdown:     rdiscount
+markdown:     kramdown

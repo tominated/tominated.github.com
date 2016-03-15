@@ -9,39 +9,21 @@
 
   <title>Tom Brunoli{% if page.title %} | {{ page.title }}{% endif %}</title>
   <meta name="author" content="Thomas Brunoli">
-  <meta name="description" content="Hi, my name is Tom. I design and develop websites professionally and affordably.">
-  <meta name="keywords" content="Website, Webpage, Web,Development, Design, Web Design, Web Development, Brisbane, Queensland, Graphics, HTML, CSS, Javascript, Python, PHP, jQuery, Drupal, Portfolio, Blog, Thomas Brunoli">
+  <meta name="description" content="Hi, I'm Tom. I like to develop websites, web applications and other hobby projects.">
+  <meta name="keywords" content="Website, Webpage, Web, Development, Design, Web Design, Web Development, Brisbane, Queensland, Graphics, HTML, CSS, Javascript, Ruby, React.js, Thomas Brunoli">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <script type="text/javascript" src="/js/modernizr.js"></script>
-  <script type="text/javascript" src="http://use.typekit.com/nze2wiy.js"></script>
+  <script type="text/javascript" src="//use.typekit.com/nze2wiy.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
   <link rel="stylesheet" type="text/css" href="/css/style.min.css" />
   <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  {% if page.title == 'Home' %}<link rel="stylesheet" type="text/css" href="/css/flexslider.css">
-  <script src="/js/jquery.flexslider-min.js"></script>
-  <script type="text/javascript" charset="utf-8">
-    $(document).ready(function() {
-      $('.flexslider').flexslider({
-        slideshowSpeed: 3000,
-        directionNav: false,
-        controlNav: false,
-        pauseOnHover: true,
-        randomize: true,
-        animation: 'fade'
-      });
-    });
-  </script>{% endif %}
 </head>
 
 <body class="dark">
-  
+
   <header id="header">
     <h1><a href="/">Tom Brunoli</a></h1>
     <p>
@@ -66,18 +48,15 @@
     </p>
   </footer>
 
-  <script src="/js/jquery.fitvids.js" type="text/javascript" charset="utf-8"></script>
-  {% if page.title == 'Blog' or page.blog %}<script src="/js/site.js" type="text/javascript" charset="utf-8"></script>{% endif %}
+  {% if page.title == 'Blog' or page.blog %}
+  <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+  <script src="/js/site.js"></script>
+  <script src="//tombrunoli.disqus.com/count.js"></script>
+  {% endif %}
+
   <script type="text/javascript">
-    {% if page.title == 'Blog' %}
-    var disqus_shortname = 'tombrunoli';
-    (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    {% endif %}// Google Analytics
+    // Google Analytics
     var _gaq=[['_setAccount','UA-22009910-1'],['_trackPageview'],['_trackPageLoadTime']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';

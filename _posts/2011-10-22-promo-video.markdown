@@ -3,6 +3,7 @@ layout: post
 title: Promotional video I made for an assignment
 category: News
 comments: true
+blog: true
 video: "<iframe src='http://player.vimeo.com/video/30900883?title=0&amp;byline=0&amp;portrait=0' width='400' height='220' frameborder='0' webkitAllowFullScreen allowFullScreen></iframe>"
 ---
 
