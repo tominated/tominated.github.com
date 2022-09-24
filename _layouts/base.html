@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="viewport" content="width=device-width" />
 
-  <title>Tom Brunoli{% if page.title %} | {{ page.title }}{% endif %}</title>
+  <title>Tom Brunoli</title>
   <meta name="author" content="Thomas Brunoli">
-  <meta name="description" content="Hi, I'm Tom. I like to develop websites, web applications and other hobby projects.">
-  <meta name="keywords" content="Website, Webpage, Web, Development, Design, Web Design, Web Development, Brisbane, Queensland, Graphics, HTML, CSS, Javascript, Ruby, React.js, Thomas Brunoli">
+  <meta name="keywords" content="Website, Webpage, Web, Development, Design, Web Design, Web Development, HTML, CSS, Javascript, Ruby, React.js, Thomas Brunoli">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -18,24 +14,16 @@
   <script type="text/javascript" src="//use.typekit.com/nze2wiy.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-  <link rel="stylesheet" type="text/css" href="/css/style.min.css" />
-  <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 </head>
 
 <body class="dark">
-
   <header id="header">
     <h1><a href="/">Tom Brunoli</a></h1>
-    <p>
-      The portfolio and musings of a young web designer and developer.
-    </p>
     <nav>
       <ul>
-        <li><a href="/"{% if page.title == 'Home' %} class="current"{% endif %}>Home</a></li>
-        <li><a href="/portfolio/"{% if page.title == 'Portfolio' %} class="current"{% endif %}>Portfolio</a></li>
-        <li><a href="/blog/"{% if page.title == 'Blog' %} class="current"{% endif %}>Blog</a></li>
-        <li><a href="/contact/"{% if page.title == 'Contact' %} class="current"{% endif %}>Contact</a></li>
-        <li><a href="https://github.com/tominated/">Github</a></li>
+        <li><a href="https://github.com/tominated/" target="_blank">Github</a></li>
+        <li><a href="https://linkedin.com/tominated/" target="_blank">LinkedIn</a></li>
       </ul>
     </nav>
   </header>
@@ -44,23 +32,8 @@
   </div>
   <footer>
     <p>
-      &copy; 2016 Thomas Brunoli<br>
+      &copy; 2022 Thomas Brunoli<br>
     </p>
   </footer>
-
-  {% if page.title == 'Blog' or page.blog %}
-  <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
-  <script src="/js/site.js"></script>
-  <script src="//tombrunoli.disqus.com/count.js"></script>
-  {% endif %}
-
-  <script type="text/javascript">
-    // Google Analytics
-    var _gaq=[['_setAccount','UA-22009910-1'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 </body>
 </html>

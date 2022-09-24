@@ -1,0 +1,107 @@
+:root {
+  --padding: 24px;
+  --double-padding: calc(2 * var(--padding));
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 800px;
+  margin: var(--double-padding) auto;
+  margin-top: 0;
+  color: #aaa;
+  background: #333 url(/img/dark_bg.png);
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  line-height: 1.4
+}
+
+
+h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #222;
+  margin: 0 0 24px 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+
+p {
+  margin: 0 0 24px 0;
+}
+
+a,
+a:link,
+a:visited {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #0050A3;
+  outline: 0;
+  transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
+}
+
+a:hover {
+  color: #666;
+  border-width: 4px;
+}
+
+#header {
+  padding: var(--double-padding) var(--padding);
+  background-image: url(/img/me.png);
+  background-size: 300px;
+  background-position-x: right;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  text-shadow: 0 -1px #000;
+  position:relative;
+}
+
+#header h1 a {
+  color: #fff;
+  border-color: #007bff;
+  text-shadow: 0 1px 0 #000;
+}
+
+#header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#header nav ul li {
+  padding-right: 16px;
+}
+
+#header nav a {
+  border-color: #666;
+  color: #ddd;
+}
+
+#content {
+  padding: var(--padding);
+  background: #fafafa url(/img/light_bg.png);
+  color: #666;
+  box-shadow: 0 0 24px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+#content p:last-of-type {
+  margin-bottom: 0;
+}
+
+footer {
+  margin: var(--padding);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --padding: 32px;
+    --double-padding: 64px;
+  }
+}
