@@ -56,7 +56,7 @@ p {
 a,
 a:link,
 a:visited {
-  color: #222;
+  color: #111;
   text-decoration: none;
   border-bottom: 1px solid #0050A3;
   outline: 0;
@@ -105,7 +105,7 @@ a:focus {
 #content {
   padding: var(--padding);
   background: #fafafa url(/img/light_bg.png);
-  color: #555;
+  color: #333;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
   position: relative;
 }
