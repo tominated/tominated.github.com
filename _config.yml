@@ -1,5 +1,0 @@
-permalink:    /blog/:categories/:year/:month/:day/:title/
-category_dir: /blog/
-highlighter:  rouge
-url:          http://tombrunoli.com
-markdown:     kramdown
