@@ -1,6 +1,14 @@
 :root {
-  --padding: 24px;
-  --double-padding: calc(2 * var(--padding));
+  /* values from https://utopia.fyi/ */
+  --font-size-normal: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+  --font-size-medium: clamp(1.2rem, 1.0739rem + 0.6304vw, 1.5625rem);
+
+  --space-xs: clamp(0.5rem, 0.4569rem + 0.2169vw, 0.625rem);
+  --space-s: clamp(1rem, 0.9138rem + 0.4338vw, 1.25rem);
+  --space-m: clamp(1.5rem, 1.3707rem + 0.6508vw, 1.875rem);
+  --space-l: clamp(2rem, 1.8275rem + 0.8677vw, 2.5rem);
+
+  --color-link: #0050A3;
 }
 
 @font-face {
@@ -39,6 +47,11 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
 
 body,
 html {
@@ -47,114 +60,96 @@ html {
 }
 
 body {
-  max-width: 800px;
-  margin: var(--double-padding) auto;
-  margin-top: 0;
   color: #aaa;
   background: #333 url(/img/dark_bg.png);
-  font-size: 14px;
   font-family: IBM Plex Sans, system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-  line-height: 1.5
+  line-height: 1.5;
 }
 
 h1 {
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: var(--font-size-medium);
+  line-height: 1.1;
+  margin: 0;
   color: #222;
-  margin: 0 0 16px 0;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
-
 p {
-  margin: 0 0 16px 0;
+  margin: 0;
 }
 
 a,
 a:link,
 a:visited {
-  color: #111;
+  color: var(--color-link);
   text-decoration: none;
-  border-bottom: 1px solid #0050A3;
+  border-bottom: 1px solid var(--color-link);
   outline: 0;
-  transition: border 0.1s ease-out;
+  transition: border 0.1s ease-in;
 }
 
 a:hover,
-a:focus {
+a:focus-visible {
   border-width: 4px;
 }
 
-#header {
-  padding: var(--double-padding) var(--padding);
-  background-image: url(/img/me.png);
-  background-size: 300px;
-  background-position-x: calc(100vw - 250px);
-  background-position-y: 0;
-  background-repeat: no-repeat;
-  text-shadow: 0 -1px #000;
-  position: relative;
+a:focus-visible {
+  outline: 1px solid var(--color-link);
 }
 
-#header h1 a {
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: var(--font-size-normal);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: var(--space-m);
+  row-gap: var(--space-xs);
+  margin: var(--space-l);
+  text-shadow: 0 -1px #000;
+}
+
+.header h1 a {
   color: #fff;
   border-color: #007bff;
   text-shadow: 0 1px 0 #000;
 }
 
-#header nav ul {
+.header ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: flex-start;
+  gap: var(--space-m);
 }
 
-#header nav ul li {
-  padding-right: 16px;
+.header li {
+  padding: 0;
+  margin: 0;
 }
 
-#header nav a {
+.header li a {
   border-color: #666;
   color: #eee;
 }
 
-#content {
-  padding: var(--padding);
+.content {
+  padding: var(--space-l);
   background: #fafafa url(/img/light_bg.png);
   color: #333;
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
-  position: relative;
 }
 
-#content p:last-of-type {
-  margin-bottom: 0;
+.content>*+* {
+  margin-block-start: var(--space-s);
 }
 
-footer {
-  margin: var(--padding);
-}
-
-@media (min-width: 550px) {
-
-  h1,
-  p {
-    margin-bottom: 24px;
-  }
-
-  #header {
-    background-position-x: right;
-  }
-}
-
-@media (min-width: 800px) {
-  :root {
-    --padding: 32px;
-    --double-padding: 64px;
-  }
-
-  #header {
-    background-position-y: 20px;
-  }
+.footer {
+  margin: var(--space-l);
 }
