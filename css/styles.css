@@ -191,6 +191,7 @@ h3 {
 
 .portrait {
   display: block;
+  width: 100%;
   max-width: var(--secondary-width);
   align-self: start;
   margin: 0 auto;
