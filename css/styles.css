@@ -129,6 +129,10 @@ h3 {
   font-size: var(--font-size-m);
 }
 
+.print-only {
+  display: none !important;
+}
+
 .container {
   max-width: 78.75rem;
   margin-block: var(--space-l);
@@ -206,6 +210,14 @@ h3 {
   body {
     background: none;
     color: #000;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .screen-only {
+    display: none !important;
   }
 
   .container {
